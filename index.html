@@ -49,12 +49,12 @@
     <script>
         const AS_URL_BASE ="https://script.google.com/macros/s/AKfycbws9Kduo0GHbK-TEaRPDevaJSIQmSPBS-RFTehrVmIYY-NQc3nOgr17IfU5MwvhkO2PUQ/exec";
         var url document.location.href;
-        var k url.substr(urL.lastIndexOf("k=")+2);
+        var k url.substr(url.lastIndexOf("k=")+2);
         
         if(K){
             fetck(AS_URL_BASE+'?k='+k)
             .then(r => r.text())
-            .then(r) => {
+            .then((r) => {
                 console.log(r);
                 //document.write(r);
                 if(r){
